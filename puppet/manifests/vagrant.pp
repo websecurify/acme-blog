@@ -21,6 +21,14 @@ class mysql-setup {
 			root_password => 'toor',
 		},
 	}
+	
+	mysql::db { 'acme-blog':
+		ensure => present,
+		user => 'acme',
+		password => 'acme',
+		grant => ['all'],
+		sql => '/vagrant/puppet/manifests/acme-blog.sql',
+	}
 }
 
 class apache-setup {
