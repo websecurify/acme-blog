@@ -40,13 +40,34 @@ class apache-setup {
 	}
 	
 	apache::vhost { 'acme-blog':
+		default_vhost => true,
 		port => '80',
 		docroot => '/vagrant/app',
-		default_vhost => true,
+		docroot_owner => 'root',
+		docroot_group => 'root',
 	}
 }
 
 class app-setup {
+	file { '/vagrant/app/wp-content':
+		ensure => directory,
+		mode => 0777,
+	}
+	
+	file { '/vagrant/app/wp-content/plugins':
+		ensure => directory,
+		mode => 0777,
+	}
+	
+	file { '/vagrant/app/wp-content/themes':
+		ensure => directory,
+		mode => 0777,
+	}
+	
+	file { '/vagrant/app/wp-content/uploads':
+		ensure => directory,
+		mode => 0777,
+	}
 }
 
 include system-update
