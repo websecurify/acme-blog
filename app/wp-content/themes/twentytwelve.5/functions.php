@@ -286,8 +286,17 @@ function twentytwelve_comment( $comment, $args, $depth ) {
 			<header class="comment-meta comment-author vcard">
 				<?php
 					echo get_avatar( $comment, 44 );
+			        
+					$cc = "";
+					
+					if ($comment->comment_author_url) {
+						$cc = "<a href=\"$comment->comment_author_url\">$comment->comment_author</a>";
+					} else {
+						$cc = $comment->comment_author;
+					}
+					
 					printf( '<cite class="fn">%1$s %2$s</cite>',
-						get_comment_author_link(),
+						$cc,
 						// If current post author is also comment author, make it known visually.
 						( $comment->user_id === $post->post_author ) ? '<span> ' . __( 'Post author', 'twentytwelve' ) . '</span>' : ''
 					);
@@ -448,3 +457,7 @@ function twentytwelve_customize_preview_js() {
 	wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
+
+remove_filter( 'pre_comment_author_url', 'wp_strip_all_tags' );
+remove_filter( 'pre_comment_author_url', 'esc_url_raw' );
+remove_filter( 'pre_comment_author_url', 'wp_filter_kses' );
