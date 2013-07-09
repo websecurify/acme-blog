@@ -38,7 +38,8 @@ class mysql-setup {
 		user => 'acme',
 		password => 'acme',
 		grant => ['all'],
-		sql => 'puppet:///manifests/acme-blog.sql',
+		sql => '/vagrant/puppet/manifests/acme-blog.sql',
+		enforce_sql => true,
 	}
 }
 
