@@ -1,27 +1,15 @@
-[submodule "puppet/modules/mysql"]
-	path = puppet/modules/mysql
-	url = https://github.com/puppetlabs/puppetlabs-mysql.git
-[submodule "puppet/modules/apt"]
-	path = puppet/modules/apt
-	url = https://github.com/puppetlabs/puppetlabs-apt.git
 [submodule "puppet/modules/stdlib"]
 	path = puppet/modules/stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
-[submodule "puppet/modules/apache"]
-	path = puppet/modules/apache
-	url = https://github.com/puppetlabs/puppetlabs-apache.git
 [submodule "puppet/modules/concat"]
 	path = puppet/modules/concat
 	url = https://github.com/ripienaar/puppet-concat.git
-[submodule "puppet/modules/sendmail"]
-	path = puppet/modules/sendmail
-	url = https://github.com/example42/puppet-sendmail.git
-[submodule "puppet/modules/puppi"]
-	path = puppet/modules/puppi
-	url = https://github.com/example42/puppi.git
-[submodule "puppet/modules/firewall"]
-	path = puppet/modules/firewall
-	url = https://github.com/example42/puppet-firewall.git
-[submodule "puppet/modules/monitor"]
-	path = puppet/modules/monitor
-	url = https://github.com/example42/puppet-monitor.git
+[submodule "puppet/modules/apt"]
+	path = puppet/modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
+[submodule "puppet/modules/mysql"]
+	path = puppet/modules/mysql
+	url = https://github.com/puppetlabs/puppetlabs-mysql.git
+[submodule "puppet/modules/apache"]
+	path = puppet/modules/apache
+	url = https://github.com/puppetlabs/puppetlabs-apache.git

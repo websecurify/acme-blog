@@ -32,7 +32,7 @@ class mysql-setup {
 		user => 'acme',
 		password => 'acme',
 		grant => ['all'],
-		sql => '/vagrant/puppet/manifests/acme-blog.sql',
+		sql => 'puppet:///puppet/manifests/acme-blog.sql',
 	}
 }
 
