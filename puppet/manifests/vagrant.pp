@@ -9,6 +9,11 @@ class system-update {
 	Exec['apt-update'] -> Package <| |>
 }
 
+class sendmail-setup {
+	class { 'sendmail':
+	}
+}
+
 class mysql-setup {
 	class { 'mysql':
 	}
@@ -71,6 +76,7 @@ class app-setup {
 }
 
 include system-update
+include sendmail-setup
 include mysql-setup
 include apache-setup
 include app-setup
