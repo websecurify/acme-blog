@@ -1,0 +1,188 @@
+#pmdashboard {
+	border-bottom:1px solid #ccc;
+	padding:6px;
+	text-transform:capitalize;
+	margin:0;
+}
+
+#pmdashboard.unread {
+	background:#FFC;
+}
+
+#pmdashboard.unread a {
+	background: url(icons/newmessage.png) no-repeat left center;
+	padding-left:22px;
+	font-weight:bold;
+}
+
+#pmdashboard.read a {
+	background:url(icons/messageread.png) no-repeat left center;
+	padding-left:22px;
+}
+
+.omlist input {
+	background:#fff;
+	border:1px solid #ccc;
+}
+
+.omlist textarea {
+	width:400px;
+	height:200px;
+}
+
+.wpupmpage h3 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	font-size:24px;
+}
+
+p.pmmenu {
+	font-weight:bold;
+	color:#aaa;
+}
+
+.pmmenu a {
+	text-decoration:none;
+}
+
+#messagelist tr.tablemenu td{
+	background:#eaeaea;
+	font-weight:bold;
+	color:#333;
+	text-align:center;
+}
+
+#messagelist td {
+	width:180px;
+	padding:4px;
+	border:1px solid #ccc;
+	font-size:11px;
+}
+
+#messagelist td.center {
+	text-align:center;
+}
+
+#messagelist .unread td{
+	font-weight:bold;
+	font-size:11px;
+	color:#933;
+}
+
+#messagelist .unread .pmauthor {
+	background: url(icons/newmessage.png) no-repeat left center;
+	padding-left:20px;
+}
+
+#messagelist .read .pmauthor {
+	background: url(icons/messageread.png) no-repeat left center;
+	padding-left:20px;
+}
+
+#messagelist .unread a {
+	text-decoration:none;
+}
+
+#messagelist .read a {
+	font-weight:normal;
+	text-decoration:none;
+}
+
+#messagelist a img {
+	margin-right:10px;
+}
+
+.information {
+	background: #fff6bf;
+	padding:8px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	border-top:1px solid #ffd324;
+	border-bottom:1px solid #ffd324;
+	max-width:500px;
+}
+
+.wrap #userlist img.avatar-32 {
+	border:1px solid #ccc;
+	padding:1px;
+	float:left;
+	margin-right:15px;
+	margin-bottom:5px;
+}
+
+#userlist a {
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:capitalize;
+}
+
+#userlist .userright {
+	padding:0;
+	margin:0;
+	color:#999;
+}
+
+#userlist .userright a{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color: #C03;
+}
+
+#userlist .clear {
+	clear:both;
+}
+
+#userlist {
+	border-bottom:1px solid #ccc;
+	margin-bottom:5px;
+	max-width:520px;
+}
+
+#readpm {
+	width:500px;
+	border:1px solid #ccc;
+}
+
+#readpm td {
+	background:#FFC;
+	padding:4px;
+	padding-left:10px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	border:1px dotted #ccc;
+}
+
+#readpm td.left {
+	width:100px;
+	text-align:right;
+	background:#BEDEDE;
+	font-weight:bold;
+	color:#555;
+}
+
+#readpm td.msgtop {
+	background:#ddd;
+	padding:5px;
+	text-align:center;
+	font-weight:bold;
+	text-transform:capitalize;
+	color:#096;
+}
+
+#readpm td.message {
+	background:#eee;
+	padding:10px;
+	font-size:12px;
+}
+
+#readpm td.message .reply {
+	border:1px inset;
+	background:#f5f5f5;
+	padding:5px;
+	margin:0;
+	margin-bottom:10px;
+}
+
+#readpm .msgtext {
+	width:470px;
+}
