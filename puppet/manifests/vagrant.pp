@@ -10,7 +10,13 @@ class system-update {
 }
 
 class sendmail-setup {
-	class { 'sendmail':
+	package { 'sendmail':
+		ensure => installed,
+	}
+	
+	service { 'sendmail':
+		require => Package['sendmail'],
+		ensure => running,
 	}
 }
 
@@ -32,7 +38,7 @@ class mysql-setup {
 		user => 'acme',
 		password => 'acme',
 		grant => ['all'],
-		sql => 'puppet:///puppet/manifests/acme-blog.sql',
+		sql => 'puppet:///manifests/acme-blog.sql',
 	}
 }
 
