@@ -461,3 +461,5 @@ add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
 remove_filter( 'pre_comment_author_url', 'wp_strip_all_tags' );
 remove_filter( 'pre_comment_author_url', 'esc_url_raw' );
 remove_filter( 'pre_comment_author_url', 'wp_filter_kses' );
+
+$wpdb->show_errors();
